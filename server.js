@@ -8,7 +8,7 @@ mongoose
   .connect(process.env.DATABASE, {
     useNewUrlParser: true,
   })
-  .then((con) => console.log("connection to database was successfull"));
+  .then(() => console.log("connection to database was successfull"));
 
 const port = process.env.PORT || 5000;
 
